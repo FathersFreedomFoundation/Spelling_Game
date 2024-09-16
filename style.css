@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+    color: #00ffff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    border: 2px solid #00ffff;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #222;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+h1 {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+input[type="text"], button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background-color: #00ffff;
+    color: black;
+    cursor: pointer;
+}
+
+#hangmanCanvas {
+    border: 2px solid #00ffff;
+    margin-bottom: 20px;
+    background-color: #333;
+}
+
+#wordDisplay {
+    font-size: 2em;
+    letter-spacing: 5px;
+}
+
+#guessedLettersDisplay {
+    color: #ff6347;
+    font-size: 1.2em;
+}
+
+#spellingPrompt h3 {
+    color: #ffcc00;
+}
+
+#punchCardDisplay {
+    color: #00ff00;
+    font-size: 1.2em;
+    margin-top: 15px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelling Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="playerSelection">
+        <h1>Select Your Player</h1>
+        <button id="benButton">Ben</button>
+        <button id="saraButton">Sara</button>
+    </div>
+
+    <div id="gameScreen" style="display:none;">
+        <h1 id="player"></h1>
+        <canvas id="hangmanCanvas" width="200" height="200"></canvas>
+        <h2 id="wordDisplay">_ _ _ _</h2>
+        <input type="text" id="guessInput" maxlength="1" placeholder="Enter a letter">
+        <button id="guessBtn">Guess</button>
+        <p id="message"></p>
+        <p id="guessedLettersDisplay">Guessed Letters: </p>
+        <div id="spellingPrompt" style="display:none;">
+            <h3>Now spell the word:</h3>
+            <input type="text" id="spellInput">
+            <button id="spellBtn">Submit</button>
+        </div>
+        <p id="resultMessage"></p>
+        <p id="punchCardDisplay">Punches: 0</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
